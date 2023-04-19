@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "JeanLuc";
+  src: url("../fonts/JeanLuc-Thin.woff2") format("woff2"),
+    url("../fonts/JeanLuc-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JeanLuc";
+  src: url("../fonts/JeanLuc-Bold.woff2") format("woff2"),
+    url("../fonts/JeanLuc-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Maison Neue";
+  src: url("../fonts/MaisonNeue-Bold.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Typography */
+h1 {
+  font-size: 52px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 34px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+p {
+  line-height: 1.8em;
+}
