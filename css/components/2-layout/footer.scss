@@ -1,0 +1,68 @@
+.footer {
+  padding: 50px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+      color: $primary;
+      font-size: inherit;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.2;
+      text-align: center;
+    }
+    h2 {
+      color: $primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 0.85;
+      text-align: center;
+    }
+    &-label {
+      position: relative;
+      left: 50%;
+      transform: translateX(-54%);
+      width: 130%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &__map {
+    position: relative;
+    margin: 0 -15px;
+    transform: scale(1.05) translateX(-2%);
+    margin-top: 10%;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    &-pin {
+      display: flex;
+
+      position: absolute;
+      top: 0;
+      left: 26%;
+      width: 52%;
+      transform: translateY(-35%);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &-img {
+      display: flex;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

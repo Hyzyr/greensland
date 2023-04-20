@@ -223,7 +223,6 @@
       font-family: $font-secondary;
       font-style: normal;
       font-weight: 300;
-      font-size: 64px;
       line-height: 1;
       text-align: center;
     }
@@ -243,7 +242,6 @@
     top: 50%;
     left: 50%;
     width: 770px;
-    max-height: 100%;
     transform: translate(-50%, -50%);
     z-index: -1;
     pointer-events: none;
