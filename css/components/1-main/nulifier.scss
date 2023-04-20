@@ -1,5 +1,9 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
+}
+:root {
+  height: 100%;
 }
 * {
   margin: 0px;
@@ -52,6 +56,7 @@ body {
   line-height: 1.7em;
   font-weight: 400;
   background: $white;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   background: $secondary;
@@ -70,4 +75,7 @@ li {
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+img {
+  pointer-events: none;
 }
