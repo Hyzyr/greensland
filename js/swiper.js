@@ -10,20 +10,20 @@ const settings = {
       disableOnInteraction: false,
     },
     breakpoints: {
-      400: {
-        slidesPerView: 2,
+      460: {
+        slidesPerView: 1.6,
         spaceBetween: 0,
       },
-      600: {
-        slidesPerView: 3,
+      620: {
+        slidesPerView: 2.1,
         spaceBetween: 10,
       },
       760: {
-        slidesPerView: 4,
+        slidesPerView: 2.6,
         spaceBetween: 10,
       },
-      1160: {
-        slidesPerView: 5,
+      1025: {
+        slidesPerView: 3.2,
         spaceBetween: 10,
       },
     },
