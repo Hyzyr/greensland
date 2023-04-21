@@ -614,7 +614,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 40px;
   background: #fff;
 }
 .certificates img {
