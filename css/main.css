@@ -609,6 +609,18 @@ img {
   height: 100%;
 }
 
+.certificates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+  background: #fff;
+}
+.certificates img {
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   padding: 50px 0;
 }
