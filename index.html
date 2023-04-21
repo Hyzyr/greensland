@@ -20,7 +20,7 @@
       <div class="autoContainer">
         <div class="header__inner">
           <span class="logo">
-            <img src="images/logo.svg" alt="Greenlands" />
+            <img src="images/logo-primary.svg" alt="Greenlands" />
           </span>
           <div class="nav" id="menu">
             <div class="nav__inner">
@@ -52,22 +52,38 @@
         <div class="autoContainer">
           <div class="hero__inner">
             <div class="hero__inner-bg">
-              <img src="images/home/bg.svg" alt="bg" />
+              <img
+                src="images/home/bg.svg"
+                alt="bg"
+                class="wow zoomIn"
+                data-wow-duration=".3s"
+              />
             </div>
             <div class="hero__inner-sub _pre">GREETINGS FROM</div>
             <div class="logo">
-              <img src="images/logo.svg" alt="Greenlands" />
+              <img
+                src="images/logo.svg"
+                alt="Greenlands"
+                class="wow zoomIn"
+                data-wow-delay=".05s"
+              />
             </div>
             <h1>
-              <span>SALADS</span>
-              <span>WITH</span>
-              <span>ATTITUDE.</span>
+              <span class="wow fadeInUp" data-wow-delay=".15s">SALADS</span>
+              <span class="wow fadeInUp" data-wow-delay=".25s">WITH</span>
+              <span class="wow fadeInUp" data-wow-delay=".35s">ATTITUDE.</span>
             </h1>
-            <div class="hero__inner-sub">
+            <div class="hero__inner-sub wow zoomIn" data-wow-delay=".46s">
               SE ACABÓ ESO DE SER <br />
               EL SEGUNDO PLATO.
             </div>
-            <button class="button button--dark">PEDIR ONLINE</button>
+            <button
+              class="button button--dark wow zoomIn"
+              data-wow-delay="1s"
+              data-wow-duration=".2s"
+            >
+              PEDIR ONLINE
+            </button>
           </div>
         </div>
       </section>
@@ -129,7 +145,7 @@
         <div class="autoContainer">
           <div class="info__inner">
             <div class="info__inner-content">
-              <p>
+              <p class="wow fadeInUp">
                 ¿LA ENSALADA DE SIEMPRE? ERROR. OLVIDA TODO LO QUE ESTÁS
                 IMAGINANDO Y PRUEBA UN NUEVO CONCEPTO. MÁS SABROSO, MENOS
                 ABURRIDO Y CON EL QUE SIEMPRE QUERRÁS REPETIR. NO SOMOS UN
@@ -138,14 +154,19 @@
                 Y ES QUE SI ALGO TENEMOS CLARO ES QUE DESPUÉS DE PROBAR NUESTRAS
                 ENSALADAS NO PODRÁS DEJAR DE PENSAR EN NOSOTROS. ¿PREPARADO?
               </p>
-              <h2>
+              <h2 class="wow fadeInUp" data-wow-delay=".25s">
                 MIRA QUÉ
                 <br />
                 PINTA!
               </h2>
-              <button class="button button--border">VER CARTA</button>
+              <button
+                class="button button--border wow fadeInUp"
+                data-wow-delay=".35s"
+              >
+                VER CARTA
+              </button>
             </div>
-            <div class="info__inner-banner">
+            <div class="info__inner-banner wow fadeInUp" data-wow-delay=".15s">
               <img src="images/salad.png" alt="salad" />
             </div>
           </div>
@@ -159,24 +180,39 @@
             <img src="images/illustrations/bg-sunshine.svg" alt="bg-sunshine" />
           </div>
           <div class="banner__inner">
-            <h2>
+            <h2
+              class="wow packUp"
+              data-wow-delay=".16s"
+              data-wow-duration=".2s"
+            >
               TE LA <br />LLEVAMOS <br />
               A CASA
             </h2>
-            <div class="banner__inner-img">
-              <img src="images/greensland-package.png" alt="greensland" />
+            <div class="banner__inner-img _package">
+              <img
+                src="images/greensland-package.png"
+                alt="greensland"
+                class="wow zoomInPack"
+                data-wow-duration=".3s"
+              />
             </div>
-            <button class="button button--dark">PEDIR GREENSLAND</button>
+            <button
+              class="button button--dark wow zoomIn"
+              data-wow-duration=".2s"
+              data-wow-delay=".2s"
+            >
+              PEDIR GREENSLAND
+            </button>
           </div>
         </div>
       </section>
       <!-- #banner end -->
       <!-- #info -->
-      <section class="info">
+      <section class="info info--mergeBottom">
         <div class="autoContainer">
           <div class="info__inner">
             <div class="info__inner-content">
-              <h2>
+              <h2 class="wow fadeInUp" data-wow-delay=".15s">
                 O PUEDES<br />
                 VENIR A<br />
                 PROBARLA A<br />
@@ -196,6 +232,8 @@
                 <img
                   src="images/illustrations/greensland-label.svg"
                   alt="map"
+                  class="wow zoomInPack"
+                  data-wow-duration=".25s"
                 />
               </div>
               <div class="footer__map-img">
@@ -217,9 +255,10 @@
         </div>
       </footer>
       <!-- #footer end -->
-    </div>
+    </section>
 
-    <script src="js/main.js"></script>
+    <script src="js/WOW.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

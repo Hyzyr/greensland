@@ -16,7 +16,7 @@ const generateTabs = function ({
 
   const tabsLength = tabs?.length ?? 0;
 
-  let activeTab = 0;
+  let activeTab = null;
 
   const setActciveTab = (index) => {
     tabs.forEach((item, i) => {

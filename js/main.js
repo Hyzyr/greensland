@@ -66,7 +66,7 @@ document.querySelectorAll(`[data-toggle]`).forEach((toggleBtn) => {
 ///
 ///
 ///
-///WOW JS
-// new WOW().init({
-//   boxClass: "wow",
-// });
+// /WOW JS
+new WOW().init({
+  boxClass: "wow",
+});
