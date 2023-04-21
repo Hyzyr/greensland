@@ -22,16 +22,12 @@ window.onclick = function (event) {
 const header = document.getElementById("header");
 if (header)
   window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > 400) {
+    if (document.documentElement.scrollTop > 20) {
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");
     }
   });
-
-///
-///
-/// slick slider
 
 ///
 ///
@@ -44,6 +40,7 @@ const toggleBody = (isClosed) => {
     document.body.classList.remove("active");
   }
 };
+
 document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
   const tab = document.querySelector(eventBtn.getAttribute("data-tab"));
   if (tab) {
@@ -65,6 +62,7 @@ document.querySelectorAll(`[data-toggle]`).forEach((toggleBtn) => {
   toggleBtn.onclick = () =>
     toggleBtn.classList.toggle(toggleBtn.getAttribute("data-toggle"));
 });
+
 ///
 ///
 ///

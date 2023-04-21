@@ -1,12 +1,32 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 30px 0;
-  z-index: 1;
+  z-index: 2;
   transition: 0.2s ease-out;
   transition-property: opacity, transform, padding;
+
+  &:after {
+    pointer-events: none;
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background: linear-gradient(
+      90deg,
+      $black-primary,
+      $primary,
+      $primary,
+      $black-primary
+    );
+    background-size: 300%;
+    background-position: 50%;
+  }
 
   &__inner {
     position: relative;
@@ -22,11 +42,18 @@
   }
 
   &.sticky {
-    position: fixed;
-    padding: 20px 0;
-    border-bottom: 1px solid rgba($secondary, 0.4);
-    animation: 0.3s sticky ease-in;
+    padding: 15px 0;
     transition-duration: 0.5s;
+    background: $secondary;
+    &:after {
+      opacity: 1;
+      background-size: 100%;
+      background-position: 0;
+    }
+    .logo {
+      font-size: 14px;
+      transition: 0.2s ease-out;
+    }
   }
   &--home {
     .header__inner {
@@ -37,6 +64,9 @@
     .burger {
       color: $secondary;
     }
+  }
+  & + .main {
+    margin-top: 125px;
   }
 }
 
@@ -60,7 +90,7 @@
     width: 100%;
     height: 0.4em;
     background-color: currentColor;
-    transition: all 0.3s ease;
+    transition: transform 0.6s ease;
   }
   span {
     top: 50%;
@@ -82,6 +112,7 @@
   }
 
   &.active {
+    color: $secondary;
     &::before {
       top: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
