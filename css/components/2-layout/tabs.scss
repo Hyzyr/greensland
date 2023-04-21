@@ -162,13 +162,24 @@
 }
 
 @mixin tabs-700 {
+  .tabs {
+    &__inner {
+      &-item {
+        &.active & {
+          &-content {
+            max-height: unset;
+          }
+        }
+      }
+    }
+  }
   .subTabs {
     background: $primary;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
-    margin: 0 - 15px;
+    margin: 0;
     padding: 40px;
 
     &__item {
