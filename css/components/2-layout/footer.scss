@@ -1,5 +1,6 @@
 .footer {
   padding: 50px 0;
+  margin-top: auto;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -26,6 +27,7 @@
       left: 50%;
       transform: translateX(-54%);
       width: 130%;
+      max-width: 600px;
 
       img {
         width: 100%;
@@ -64,5 +66,9 @@
         height: auto;
       }
     }
+  }
+
+  &--mergeBottom {
+    padding-bottom: 20px;
   }
 }

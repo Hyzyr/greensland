@@ -3,6 +3,7 @@
   flex-direction: column;
   overflow: hidden;
   min-height: 100%;
+  margin: 0 auto;
 }
 .screenContainer {
   display: flex;
@@ -13,7 +14,7 @@
 }
 
 .autoContainer {
-  max-width: 1340px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }

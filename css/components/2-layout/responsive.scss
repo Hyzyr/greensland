@@ -1,0 +1,9 @@
+@media (min-width: 400px) {
+  body {
+    font-size: 27px;
+  }
+  @include tabs-400;
+}
+@media (min-width: 700px) {
+  @include tabs-700;
+}
